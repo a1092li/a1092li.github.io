@@ -3,7 +3,8 @@ var myHeading = document.querySelector('h1');
 myHeading.textContent = 'Hello world!';
 
 var myImage = document.querySelector('img');
-var x = document.getElementById("geolocation");
+var x =  document.getElementById("geolocation");
+var x2 = document.getElementById("doeSupported");
 
 myImage.onclick = function() {
     var mySrc = myImage.getAttribute('src');
@@ -17,7 +18,7 @@ myImage.onclick = function() {
 
 if (window.DeviceOrientationEvent) {
   window.addEventListener('deviceorientation', deviceOrientationHandler, false);
-  document.getElementById("doeSupported").innerText = "..YES..";
+  x2.innerHTML = "..YES..";
 }
 
 // There are only functions below
