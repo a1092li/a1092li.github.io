@@ -1,0 +1,62 @@
+html {
+  font-size: 15px; 
+  font-family: 'Arimo', sans-serif;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+html:hover {
+	font-family: 'Squada One', cursive;
+}
+body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #d0d0d0;
+  padding: 10px 20px 20px 20px;
+  border: 3px solid black;
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+h1 {
+  margin: 0;
+  font-size: 20px; 
+  color: Black;
+  text-align: center;
+}
+li {
+  list-style-type: square;
+}
+.special {
+  color: red;
+  font-weight: bold;
+  list-style-type: none;
+}
+li em {
+  color: green;
+}
+b:first-child {
+	font-size:20px;
+	font-weight: bold;
+	color:red;
+}
+li:first-child {
+	font-size:20px;
+	font-weight: bold;
+	color:gray;
+}
+#description {	
+	font-size:20px;
+	color:gray;
+}
+#description:hover {	
+	font-weight: bold;
+	color:blue;
+}
+p:hover, a:hover, li:hover {
+    font-size: 20px; 
+}
+.first {
+    font-size: 120%;
+    font-weight: bold;
+}  
