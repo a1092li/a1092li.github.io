@@ -1,39 +1,19 @@
-<!DOCTYPE html>
 <html>
-  <body>
-    <canvas id="myCanvas" width="360" height="450" style="border:1px solid #d3d3d3;">
-    </canvas>
-    <script>
-      function deviceOrientationListener(event) {
-        var c = document.getElementById("myCanvas");
-        var ctx = c.getContext("2d");
+<head>
+<link rel="stylesheet" href="styles/styles.css">
+<meta charset="utf-8">
+    <title>My Test document</title>
+</head>
+<body>
+<h1>Header</h1>
+<p>Paragraph 1</p>
+<p>Doesupported</p>
+<text id="doeSupported">....</text><br>
+<text class="special">Text of paragraph 1</text>
+<p>Paragraph 2</p>
+<text class="special">Text into the paragraph 2</text>
+<h1 id="description">Description</h1>
 
-        ctx.clearRect(0, 0, c.width, c.height);
-        ctx.fillStyle = "#FF7777";
-        ctx.font = "14px Verdana";
-        ctx.fillText("Alpha: " + Math.Round(event.alpha), 10, 20);
-        ctx.beginPath();
-        ctx.moveTo(180, 75);
-        ctx.lineTo(210, 75);
-        ctx.arc(180, 75, 60, 0, event.alpha * Math.PI / 180);
-        ctx.fill();
-
-        ctx.fillStyle = "#FF6600";
-        ctx.fillText("Beta: " + Math.round(event.beta), 10, 140);
-        ctx.beginPath();
-        ctx.fillRect(180, 150, event.beta, 90);
-
-        ctx.fillStyle = "#FF0000";
-        ctx.fillText("Gamma: " + Math.round(event.gamma), 10, 270);
-        ctx.beginPath();
-        ctx.fillRect(90, 340, 180, event.gamma);
-      }
-
-      if (window.DeviceOrientationEvent) {
-        window.addEventListener("deviceorientation", deviceOrientationListener);
-      } else {
-        alert("Sorry, your browser doesn't support Device Orientation");
-      }
-    </script>
-  </body>
+<script src="main.js"></script>
+</body>
 </html>
